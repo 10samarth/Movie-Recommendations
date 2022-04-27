@@ -12,4 +12,10 @@ Almost everyone today uses technology to stream movies and television shows. Whi
 
 ### Dataset link: [https://grouplens.org/datasets/movielens/1m/](https://grouplens.org/datasets/movielens/1m/)
 
-
+## Progress Tracking
+- [x] Literature Review and Studying datasets
+- [x] Data Preprocessing
+- [x] Content Based Filtering Algorithm Implementation
+- [ ] Collaborative Filtering System Algorithm Implementation
+- [ ] Data Visualizations
+- [ ] Web App
