@@ -1,4 +1,4 @@
-# Movie-Recommendations
+# Movie Recommendation
 
 ## Team: Big Oh
 - Samarth Goudar
