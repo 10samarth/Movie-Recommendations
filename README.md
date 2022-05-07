@@ -14,6 +14,7 @@ Almost everyone today uses technology to stream movies and television shows. Whi
 
 ## Progress Tracking
 - [x] Literature Review and Studying datasets
+- [x] Data Visualizations
 - [x] Data Preprocessing
 - [x] Content Based Filtering Algorithm Implementation
 - [ ] Collaborative Filtering System Algorithm Implementation
