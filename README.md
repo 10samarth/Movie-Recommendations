@@ -17,5 +17,5 @@ Almost everyone today uses technology to stream movies and television shows. Whi
 - [x] Data Visualizations
 - [x] Data Preprocessing
 - [x] Content Based Filtering Algorithm Implementation
-- [ ] Collaborative Filtering System Algorithm Implementation
+- [x] Collaborative Filtering System Algorithm Implementation
 - [ ] Web App
