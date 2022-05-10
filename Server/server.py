@@ -6,8 +6,8 @@ import pandas as pd
 app = Flask(__name__)
 CORS(app)
 # Loading model to compare the results
-movie_data = pickle.load(open('Models/movies_df.pkl','rb'))
-sim = pickle.load(open('Models/similarity.pkl','rb'))
+movie_data = pickle.load(open('movies_df.pkl','rb'))
+sim = pickle.load(open('similarity.pkl','rb'))
 titles = movie_data['title']
 title_ids = pd.Series(movie_data.index, index=movie_data['title'])
 movie_poster_ids = movie_data['id']
@@ -38,8 +38,12 @@ def home():
             # Get json key-value sent from POST request here
             print(request_body['movieName'])
             movie_poster_id,movie_titles = get_content_recommendations(request_body['movieName'])
-            recommends = movie_poster_id.to_json()+movie_titles.to_json()
+            movie_poster_json = movie_poster_id.to_json()
+            movie_titles_json = movie_titles.to_json()
             # TODO: Add code here to call ML function with the movieName
-            return jsonify({'status': 200, 'op':recommends})
+            return jsonify({'status': 200, 'titles':movie_titles_json, 'poster': movie_poster_json})
         except Exception as ex:
             return jsonify({'status': 500, 'message': ex})
+        
+if __name__ == "__main__":
+    app.run(debug=False)
