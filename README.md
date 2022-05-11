@@ -19,6 +19,25 @@ A recommendation system predicts the rating or the preference a user might give 
 | /api | GET    | NA                          | Returns the response for status  of the backend server                                                                                          | 200 OK OR 500 INTERNAL SERVER ERROR                                       |
 | /api | POST   | { movieName: 'Test Movie' } | Calls Recommendation system model for the  movie name received in request body and returns  an Array of Movie Object which contain all the data | {'status': 200, 'titles': movie_titles_json, 'poster': movie_poster_json} |
 
+
+## Instructions
+
+1. Running Backend
+
+    ```
+    cd backend
+    FLASK_APP=server.py 
+    flask run
+    ```
+
+2. Running Frontend
+
+    ```
+    cd frontend
+    npm install
+    npm run
+    ```
+
 ## Frontend Capture
 ![frontend_capture](https://user-images.githubusercontent.com/20245964/167751478-056964a3-3813-4b99-b6f7-ebf9eae962ee.jpeg)
 
