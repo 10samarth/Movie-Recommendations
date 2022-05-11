@@ -11,6 +11,12 @@ Almost everyone today uses technology to stream movies and television shows. Whi
 - Koushik Pillalamarri (SJSU ID: 015017743)
 - Krishna Gupta (SJSU ID: 015721199)
 
+## Flask Backend APIs
+| API  | Method | Req.Body                    | Description                                                                                                                                     | Output                                                                    |
+|------|--------|-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
+| /api | GET    | NA                          | Returns the response for status  of the backend server                                                                                          | 200 OK OR 500 INTERNAL SERVER ERROR                                       |
+| /api | POST   | { movieName: 'Test Movie' } | Calls Recommendation system model for the  movie name received in request body and returns  an Array of Movie Object which contain all the data | {'status': 200, 'titles': movie_titles_json, 'poster': movie_poster_json} |
+
 ## Progress Tracking
 - [x] Literature Review and Studying datasets
 - [x] Data Visualizations
